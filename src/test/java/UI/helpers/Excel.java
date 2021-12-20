@@ -13,12 +13,12 @@ public class Excel {
 
     public static void excelGenerator(List<Integer>responsCode) throws IOException {
 
-        List<String[]> csvData = createCsvData(responsCode);
+        List<String[]> csvData = createCsvData();
         try (CSVWriter writer = new CSVWriter(new FileWriter(System.getProperty("user.dir") + "/test-output/Odev.csv"))) {
             writer.writeAll(csvData);
         }
     }
-    private static List<String[]> createCsvData(List<Integer> responsCode) {
+    private static List<String[]> createCsvData() {
         String[] header = {"Response Code"};
         String[] record1 = {response.asString()};
         List<String[]> list = new ArrayList<>();
