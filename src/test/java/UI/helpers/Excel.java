@@ -6,24 +6,20 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import static API.Services.response;
 
 public class Excel {
 
-    public static void excelGenerator(List<Integer>responsCode) throws IOException {
+    public static void excelGenerator(List<String> responCodes) throws IOException {
 
-        List<String[]> csvData = createCsvData();
-        try (CSVWriter writer = new CSVWriter(new FileWriter(System.getProperty("user.dir") + "/test-output/Odev.csv"))) {
-            writer.writeAll(csvData);
-        }
-    }
-    private static List<String[]> createCsvData() {
-        String[] header = {"Response Code"};
-        String[] record1 = {response.asString()};
-        List<String[]> list = new ArrayList<>();
-        list.add(header);
-        list.add(record1);
-        return list;
+        FileWriter writer = new FileWriter(System.getProperty("user.dir") + "/test-output/Odev.csv");
+
+        String collect = responCodes.stream().collect(Collectors.joining(","));
+        System.out.println(collect);
+
+        writer.write(collect);
+        writer.close();
     }
 }

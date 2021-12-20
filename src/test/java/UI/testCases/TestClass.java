@@ -72,11 +72,11 @@ public class TestClass extends BaseClass {
         ScrollElement();
         List<WebElement> butiks = driver.findElements(By.xpath("//a[contains(@href, 'butik')]"));
         System.out.println("Toplam Butik Link : " + butiks.size());
-        List<String[]> responseCode = new ArrayList<>();
+        List<String> responseCode = new ArrayList<>();
         for(WebElement eachButik : butiks){
             String URL=eachButik.getAttribute("href" );
             responseCode.add(getResponseCode("",URL));
-    }
-        excel.excelGenerator(responseCode);
+        }
+        Excel.excelGenerator(responseCode);
     }
 }

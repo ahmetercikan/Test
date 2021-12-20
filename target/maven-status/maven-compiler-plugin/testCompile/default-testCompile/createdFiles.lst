@@ -9,4 +9,3 @@ API/Response.class
 UI/utils/Browser.class
 UI/testCases/TestClass.class
 UI/pages/LoginPage.class
-API/Result.class

@@ -22,7 +22,7 @@ public class Services extends BaseClass {
     String errorValue;
     String idValue;
     public Services(){}
-    public static String[] getResponseCode(String baseUri, String endPoint)
+    public static String getResponseCode(String baseUri, String endPoint)
     {
         RestAssured.baseURI = baseUri;
         response = RestAssured.given().contentType(ContentType.JSON).get(endPoint);
