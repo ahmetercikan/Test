@@ -12,7 +12,10 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertNotSame;
 
 public class Services extends BaseClass {
 
@@ -26,7 +29,6 @@ public class Services extends BaseClass {
     {
         RestAssured.baseURI = baseUri;
         response = RestAssured.given().contentType(ContentType.JSON).get(endPoint);
-        assertEquals(200, response.getStatusCode());
         return String.valueOf(response.getStatusCode());
     }
     public void getServices(String baseUri,String endPoint)
@@ -60,7 +62,7 @@ public class Services extends BaseClass {
         System.out.println(" --- " + servicesName + " --- ");
         System.out.println("Response :" + response.asString());
         System.out.println("Status Code :" + response.getStatusCode());
-        assertEquals(200, response.getStatusCode());
+
     }
     public void deleteServicesNonReq(String baseUri,String endPoint, String servicesName)
     {
@@ -93,12 +95,14 @@ public class Services extends BaseClass {
     {
         logger = extent.startTest("Book Put Request mpty","Book Put Request Empty");
         Map<String, Object> jsonAsMap = new HashMap<>();
-        jsonAsMap.put("", "");
-        jsonAsMap.put("", "");
+        jsonAsMap.put("author", "");
+        jsonAsMap.put("title", "");
         putServices(odevApiURL, "/api/books", "Book Put Request", jsonAsMap);
+        assertEquals(400, response.getStatusCode());
         ObjectMapper objectMapper = new ObjectMapper();
         Response responseobj = objectMapper.readValue(response.asString(), Response.class);
         errorValue = responseobj.error;
+        assertEquals(errorValue,"should return an error Field '<field_name>' cannot be empty.");
         System.out.println("Error : " + errorValue);
     }
     @Test
@@ -137,5 +141,6 @@ public class Services extends BaseClass {
         Response responseobj = objectMapper.readValue(response.asString(), Response.class);
         errorValue = responseobj.error;
         System.out.println("Error : " + errorValue);
+        assertEquals(400, response.getStatusCode());
     }
 }

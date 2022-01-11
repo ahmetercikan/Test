@@ -86,9 +86,9 @@
     </build>
     <properties>
         <encoding>UTF-8</encoding>
-        <url>url</url>
-        <emailValue>email</emailValue>
-        <passwordValue>password</passwordValue>
+        <url>https://www.trendyol.com</url>
+        <emailValue>ahmetmesutercikan@hotmail.com</emailValue>
+        <passwordValue>Ahmet.naz05</passwordValue>
         <selenium.version>3.11.0</selenium.version>
         <serenity.version>2.0.27</serenity.version>
         <serenity.maven.version>2.0.27</serenity.maven.version>

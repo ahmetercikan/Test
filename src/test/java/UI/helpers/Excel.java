@@ -15,10 +15,7 @@ public class Excel {
     public static void excelGenerator(List<String> responCodes) throws IOException {
 
         FileWriter writer = new FileWriter(System.getProperty("user.dir") + "/test-output/Odev.csv");
-
-        String collect = responCodes.stream().collect(Collectors.joining(","));
-        System.out.println(collect);
-
+        String collect = responCodes.stream().collect(Collectors.joining("\n"));
         writer.write(collect);
         writer.close();
     }

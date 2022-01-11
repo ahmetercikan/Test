@@ -7,5 +7,6 @@ UI/helpers/Constants.class
 UI/helpers/BrowserUtils$2.class
 API/Response.class
 UI/utils/Browser.class
-UI/testCases/TestClass.class
 UI/pages/LoginPage.class
+UI/testCases/HomePageTest.class
+UI/testCases/LoginPageTest.class
