@@ -1,9 +1,9 @@
 
 
-Odev projesi içerisindeki Docker compose yml dosyasını remote connection için kullanılacak uzak makine içerisinde bir klasöre atılır.
+Odev projesi içerisindeki Docker-compose18 yml dosyasını remote connection için kullanılacak uzak makine içerisinde bir klasöre atılır.
 
 uzak makine de çalıştırılacak komut :
-docker-compose -p grid up --scale chromenode=10 --force-recreate -d
+docker-compose -f docker-compose18.yml up
 
 Butik linkleri için oluşan Csv dosyası test-output içerisinde .csv uzantısında oluşmaktadır.
 
