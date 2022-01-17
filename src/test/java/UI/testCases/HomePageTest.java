@@ -22,7 +22,10 @@ public class HomePageTest extends BaseClass
     public void butikLinkAddCSV() throws Exception {
         launchBrowser(url);
         logger = extent.startTest("butik link", "butik link");
-        clickToBy(By.id("Rating-Review"));
+        if (driver.findElements( By.id("Rating-Review") ).isEmpty())
+        {
+            clickToBy(By.id("Rating-Review"));
+        }
         ScrollElement();
         List<WebElement> butiks = driver.findElements(By.xpath("//a[contains(@href, 'butik')]"));
         System.out.println("Toplam Butik Link : " + butiks.size());
