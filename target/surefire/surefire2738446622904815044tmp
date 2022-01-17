@@ -1,5 +1,5 @@
 #surefire
-#Tue Jan 11 17:35:49 TRT 2022
+#Mon Jan 17 12:02:32 TRT 2022
 classPathUrl.189=/Users/ahmet.ercikan/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar
 classPathUrl.187=/Users/ahmet.ercikan/.m2/repository/org/hibernate/hibernate-validator/5.1.1.Final/hibernate-validator-5.1.1.Final.jar
 classPathUrl.188=/Users/ahmet.ercikan/.m2/repository/org/jboss/logging/jboss-logging/3.1.3.GA/jboss-logging-3.1.3.GA.jar
@@ -62,7 +62,7 @@ mainCliOptions0=LOGGING_LEVEL_ERROR
 mainCliOptions2=LOGGING_LEVEL_INFO
 mainCliOptions1=LOGGING_LEVEL_WARN
 useManifestOnlyJar=true
-pluginPid=33130
+pluginPid=64279
 classPathUrl.198=/Users/ahmet.ercikan/.m2/repository/com/vladsch/flexmark/flexmark/0.26.4/flexmark-0.26.4.jar
 classPathUrl.199=/Users/ahmet.ercikan/.m2/repository/com/vladsch/flexmark/flexmark-ext-abbreviation/0.26.4/flexmark-ext-abbreviation-0.26.4.jar
 classPathUrl.196=/Users/ahmet.ercikan/.m2/repository/es/nitaur/markdown/txtmark/0.16/txtmark-0.16.jar
