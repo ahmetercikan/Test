@@ -22,7 +22,7 @@ public class HomePageTest extends BaseClass
     public void butikLinkAddCSV() throws Exception {
         launchBrowser(url);
         logger = extent.startTest("butik link", "butik link");
-        if (driver.findElements( By.id("Rating-Review") ).isEmpty())
+        if (driver.findElement( By.id("Rating-Review") ).isDisplayed())
         {
             clickToBy(By.id("Rating-Review"));
         }
