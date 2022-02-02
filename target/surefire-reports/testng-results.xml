@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="21" passed="14" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-01-17T09:02:33Z" name="Odev" finished-at="2022-01-17T09:11:33Z" duration-ms="539843">
+    <groups>
+      <group name="MyGroup">
+        <method signature="LoginPageTest.loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@4313f5bc]" name="loginSucces" class="UI.testCases.LoginPageTest"/>
+        <method signature="LoginPageTest.wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@4313f5bc]" name="wrongEmail" class="UI.testCases.LoginPageTest"/>
+        <method signature="LoginPageTest.loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@363ee3a2]" name="loginSucces" class="UI.testCases.LoginPageTest"/>
+        <method signature="LoginPageTest.wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@363ee3a2]" name="wrongEmail" class="UI.testCases.LoginPageTest"/>
+        <method signature="LoginPageTest.loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@47d90b9e]" name="loginSucces" class="UI.testCases.LoginPageTest"/>
+        <method signature="LoginPageTest.wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@47d90b9e]" name="wrongEmail" class="UI.testCases.LoginPageTest"/>
+      </group> <!-- MyGroup -->
+    </groups>
+    <test started-at="2022-01-17T09:02:33Z" name="Chrome Test" finished-at="2022-01-17T09:06:04Z" duration-ms="211225">
+      <class name="UI.testCases.HomePageTest">
+        <test-method signature="butikLinkAddCSV()[pri:0, instance:UI.testCases.HomePageTest@7f010382]" started-at="2022-01-17T12:03:39Z" name="butikLinkAddCSV" description="Butik Link Search" finished-at="2022-01-17T12:06:04Z" duration-ms="144965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- butikLinkAddCSV -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.HomePageTest@7f010382]" started-at="2022-01-17T12:06:04Z" name="getResult" finished-at="2022-01-17T12:06:04Z" duration-ms="227" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=butikLinkAddCSV status=SUCCESS method=HomePageTest.butikLinkAddCSV()[pri:0, instance:UI.testCases.HomePageTest@7f010382] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- UI.testCases.HomePageTest -->
+      <class name="UI.testCases.LoginPageTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:02:33Z" name="startReport" finished-at="2022-01-17T12:02:33Z" duration-ms="269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:02:33Z" name="loginSucces" description="Başarılı Kullanıcı Girişi" finished-at="2022-01-17T12:02:54Z" duration-ms="20528" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for UI.helpers.BrowserUtils$1@2f162cc0 (tried for 10 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for UI.helpers.BrowserUtils$1@2f162cc0 (tried for 10 second(s) with 1000 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at UI.helpers.BrowserUtils.fluentWait(BrowserUtils.java:23)
+	at UI.testCases.LoginPageTest.loginSucces(LoginPageTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Hesabım')]"}
+  (Session info: MicrosoftEdge=96.0.1054.62)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAC-IT-13.local', ip: 'fe80:0:0:0:b:f98a:86f4:b3d9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 96.0.1054.62, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:43125}, msedge: {msedgedriverVersion: 96.0.1054.62 (f97cb2ce0103f..., userDataDir: /tmp/.com.microsoft.Edge.dH...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.24.0.5:4444/sessio..., se:cdpVersion: 96.0.1054.62, se:vnc: ws://172.24.0.5:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.24.0.5:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bd32bdbf819237fd968f9664742147f7
+*** Element info: {Using=xpath, value=//*[contains(text(),'Hesabım')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at UI.helpers.BrowserUtils$1.apply(BrowserUtils.java:25)
+	at UI.helpers.BrowserUtils$1.apply(BrowserUtils.java:23)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucces -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:02:54Z" name="getResult" finished-at="2022-01-17T12:02:54Z" duration-ms="619" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSucces status=FAILURE method=LoginPageTest.loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@4313f5bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:02:54Z" name="wrongEmail" description="Hatalı Email ile Giriş" finished-at="2022-01-17T12:03:03Z" duration-ms="8303" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Hata : Beklenen Veri Hatalı 
+Expected: is "HATALI CASE"
+     got: "E-posta adresiniz ve/veya şifreniz hatalı."
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Hata : Beklenen Veri Hatalı 
+Expected: is "HATALI CASE"
+     got: "E-posta adresiniz ve/veya şifreniz hatalı."
+
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:21)
+	at UI.helpers.BrowserUtils.assertControl(BrowserUtils.java:74)
+	at UI.testCases.LoginPageTest.wrongEmail(LoginPageTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongEmail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:03Z" name="getResult" finished-at="2022-01-17T12:03:03Z" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongEmail status=FAILURE method=LoginPageTest.wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@4313f5bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="wrongPassword()[pri:4, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:03Z" name="wrongPassword" description="Hatalı Şifre ile Giriş" finished-at="2022-01-17T12:03:14Z" duration-ms="10676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:14Z" name="getResult" finished-at="2022-01-17T12:03:15Z" duration-ms="1352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongPassword status=SUCCESS method=LoginPageTest.wrongPassword()[pri:4, instance:UI.testCases.LoginPageTest@4313f5bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankEmail()[pri:5, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:15Z" name="blankEmail" description="Boş Email ile Giriş" finished-at="2022-01-17T12:03:22Z" duration-ms="6982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:22Z" name="getResult" finished-at="2022-01-17T12:03:22Z" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankEmail status=SUCCESS method=LoginPageTest.blankEmail()[pri:5, instance:UI.testCases.LoginPageTest@4313f5bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankPassword()[pri:6, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:22Z" name="blankPassword" description="Boş Password ile Giriş" finished-at="2022-01-17T12:03:31Z" duration-ms="8935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:31Z" name="getResult" finished-at="2022-01-17T12:03:31Z" duration-ms="181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankPassword status=SUCCESS method=LoginPageTest.blankPassword()[pri:6, instance:UI.testCases.LoginPageTest@4313f5bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankEmailandPassword()[pri:7, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:31Z" name="blankEmailandPassword" description="Boş Email ve Password ile Giriş" finished-at="2022-01-17T12:03:38Z" duration-ms="6868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmailandPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@4313f5bc]" started-at="2022-01-17T12:03:38Z" name="getResult" finished-at="2022-01-17T12:03:39Z" duration-ms="742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankEmailandPassword status=SUCCESS method=LoginPageTest.blankEmailandPassword()[pri:7, instance:UI.testCases.LoginPageTest@4313f5bc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- UI.testCases.LoginPageTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2022-01-17T09:06:04Z" name="Firefox Test" finished-at="2022-01-17T09:10:11Z" duration-ms="247141">
+      <class name="UI.testCases.HomePageTest">
+        <test-method signature="butikLinkAddCSV()[pri:0, instance:UI.testCases.HomePageTest@4690b489]" started-at="2022-01-17T12:08:37Z" name="butikLinkAddCSV" description="Butik Link Search" finished-at="2022-01-17T12:10:11Z" duration-ms="94170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- butikLinkAddCSV -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.HomePageTest@4690b489]" started-at="2022-01-17T12:10:11Z" name="getResult" finished-at="2022-01-17T12:10:11Z" duration-ms="179" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=butikLinkAddCSV status=SUCCESS method=HomePageTest.butikLinkAddCSV()[pri:0, instance:UI.testCases.HomePageTest@4690b489] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- UI.testCases.HomePageTest -->
+      <class name="UI.testCases.LoginPageTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:04Z" name="startReport" finished-at="2022-01-17T12:06:04Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:04Z" name="loginSucces" description="Başarılı Kullanıcı Girişi" finished-at="2022-01-17T12:06:21Z" duration-ms="17193" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for UI.helpers.BrowserUtils$1@53153d5e (tried for 10 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for UI.helpers.BrowserUtils$1@53153d5e (tried for 10 second(s) with 1000 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at UI.helpers.BrowserUtils.fluentWait(BrowserUtils.java:23)
+	at UI.testCases.LoginPageTest.loginSucces(LoginPageTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),'Hesabım')]"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAC-IT-13.local', ip: 'fe80:0:0:0:b:f98a:86f4:b3d9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /tmp/.com.google.Chrome.zoT2PT}, goog:chromeOptions: {debuggerAddress: localhost:45963}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), se:cdp: ws://172.24.0.4:4444/sessio..., se:cdpVersion: 96.0.4664.110, se:vnc: ws://172.24.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.24.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e0072e67a12be2a8c0d29139ade15c88
+*** Element info: {Using=xpath, value=//*[contains(text(),'Hesabım')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at UI.helpers.BrowserUtils$1.apply(BrowserUtils.java:25)
+	at UI.helpers.BrowserUtils$1.apply(BrowserUtils.java:23)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucces -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:21Z" name="getResult" finished-at="2022-01-17T12:06:22Z" duration-ms="355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSucces status=FAILURE method=LoginPageTest.loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:22Z" name="wrongEmail" description="Hatalı Email ile Giriş" finished-at="2022-01-17T12:06:34Z" duration-ms="12518" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Hata : Beklenen Veri Hatalı 
+Expected: is "HATALI CASE"
+     got: "E-posta adresiniz ve/veya şifreniz hatalı."
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Hata : Beklenen Veri Hatalı 
+Expected: is "HATALI CASE"
+     got: "E-posta adresiniz ve/veya şifreniz hatalı."
+
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:21)
+	at UI.helpers.BrowserUtils.assertControl(BrowserUtils.java:74)
+	at UI.testCases.LoginPageTest.wrongEmail(LoginPageTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongEmail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:34Z" name="getResult" finished-at="2022-01-17T12:06:36Z" duration-ms="1323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongEmail status=FAILURE method=LoginPageTest.wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="wrongPassword()[pri:4, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:36Z" name="wrongPassword" description="Hatalı Şifre ile Giriş" finished-at="2022-01-17T12:06:42Z" duration-ms="6215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:42Z" name="getResult" finished-at="2022-01-17T12:06:42Z" duration-ms="176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongPassword status=SUCCESS method=LoginPageTest.wrongPassword()[pri:4, instance:UI.testCases.LoginPageTest@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankEmail()[pri:5, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:06:42Z" name="blankEmail" description="Boş Email ile Giriş" finished-at="2022-01-17T12:08:21Z" duration-ms="98747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:08:21Z" name="getResult" finished-at="2022-01-17T12:08:21Z" duration-ms="125" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankEmail status=SUCCESS method=LoginPageTest.blankEmail()[pri:5, instance:UI.testCases.LoginPageTest@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankPassword()[pri:6, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:08:21Z" name="blankPassword" description="Boş Password ile Giriş" finished-at="2022-01-17T12:08:28Z" duration-ms="7167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:08:28Z" name="getResult" finished-at="2022-01-17T12:08:29Z" duration-ms="741" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankPassword status=SUCCESS method=LoginPageTest.blankPassword()[pri:6, instance:UI.testCases.LoginPageTest@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankEmailandPassword()[pri:7, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:08:29Z" name="blankEmailandPassword" description="Boş Email ve Password ile Giriş" finished-at="2022-01-17T12:08:37Z" duration-ms="8046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmailandPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@363ee3a2]" started-at="2022-01-17T12:08:37Z" name="getResult" finished-at="2022-01-17T12:08:37Z" duration-ms="182" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankEmailandPassword status=SUCCESS method=LoginPageTest.blankEmailandPassword()[pri:7, instance:UI.testCases.LoginPageTest@363ee3a2] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- UI.testCases.LoginPageTest -->
+    </test> <!-- Firefox Test -->
+    <test started-at="2022-01-17T09:10:11Z" name="IE Test" finished-at="2022-01-17T09:11:33Z" duration-ms="81444">
+      <class name="UI.testCases.HomePageTest">
+        <test-method signature="butikLinkAddCSV()[pri:0, instance:UI.testCases.HomePageTest@1184ab05]" started-at="2022-01-17T12:11:22Z" name="butikLinkAddCSV" description="Butik Link Search" finished-at="2022-01-17T12:11:31Z" duration-ms="9192" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[Element <g id="Rating-Review"> could not be scrolled into view
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAC-IT-13.local', ip: 'fe80:0:0:0:b:f98a:86f4:b3d9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211215221728, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1795, moz:profile: /tmp/rust_mozprofileZIBz3C, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.10.76-linuxkit, proxy: Proxy(), se:vnc: ws://172.24.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.24.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0ade2035-793e-4a83-8cfb-d7bf6834d8d3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: Element <g id="Rating-Review"> could not be scrolled into view
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAC-IT-13.local', ip: 'fe80:0:0:0:b:f98a:86f4:b3d9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211215221728, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1795, moz:profile: /tmp/rust_mozprofileZIBz3C, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.10.76-linuxkit, proxy: Proxy(), se:vnc: ws://172.24.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.24.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0ade2035-793e-4a83-8cfb-d7bf6834d8d3
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:279)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+	at UI.utils.Browser.clickTo(Browser.java:63)
+	at UI.utils.Browser.clickToBy(Browser.java:54)
+	at UI.testCases.HomePageTest.butikLinkAddCSV(HomePageTest.java:27)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- butikLinkAddCSV -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.HomePageTest@1184ab05]" started-at="2022-01-17T12:11:31Z" name="getResult" finished-at="2022-01-17T12:11:33Z" duration-ms="1548" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=butikLinkAddCSV status=FAILURE method=HomePageTest.butikLinkAddCSV()[pri:0, instance:UI.testCases.HomePageTest@1184ab05] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- UI.testCases.HomePageTest -->
+      <class name="UI.testCases.LoginPageTest">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:11Z" name="startReport" finished-at="2022-01-17T12:10:11Z" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method signature="loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:11Z" name="loginSucces" description="Başarılı Kullanıcı Girişi" finished-at="2022-01-17T12:10:34Z" duration-ms="22474" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for UI.helpers.BrowserUtils$1@7798de95 (tried for 10 second(s) with 1000 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for UI.helpers.BrowserUtils$1@7798de95 (tried for 10 second(s) with 1000 milliseconds interval)
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:303)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at UI.helpers.BrowserUtils.fluentWait(BrowserUtils.java:23)
+	at UI.testCases.LoginPageTest.loginSucces(LoginPageTest.java:36)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: //*[contains(text(),'Hesabım')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'
+System info: host: 'MAC-IT-13.local', ip: 'fe80:0:0:0:b:f98a:86f4:b3d9%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 95.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20211215221728, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1257, moz:profile: /tmp/rust_mozprofilebHtbAF, moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, platformVersion: 5.10.76-linuxkit, proxy: Proxy(), se:vnc: ws://172.24.0.3:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.24.0.3:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 9aff227a-152e-4e66-a18f-f648071261b8
+*** Element info: {Using=xpath, value=//*[contains(text(),'Hesabım')]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:319)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:421)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:311)
+	at UI.helpers.BrowserUtils$1.apply(BrowserUtils.java:25)
+	at UI.helpers.BrowserUtils$1.apply(BrowserUtils.java:23)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:248)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSucces -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:34Z" name="getResult" finished-at="2022-01-17T12:10:35Z" duration-ms="870" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginSucces status=FAILURE method=LoginPageTest.loginSucces()[pri:2, instance:UI.testCases.LoginPageTest@47d90b9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:35Z" name="wrongEmail" description="Hatalı Email ile Giriş" finished-at="2022-01-17T12:10:42Z" duration-ms="6924" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Hata : Beklenen Veri Hatalı 
+Expected: is "HATALI CASE"
+     got: "E-posta adresiniz ve/veya şifreniz hatalı."
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Hata : Beklenen Veri Hatalı 
+Expected: is "HATALI CASE"
+     got: "E-posta adresiniz ve/veya şifreniz hatalı."
+
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:21)
+	at UI.helpers.BrowserUtils.assertControl(BrowserUtils.java:74)
+	at UI.testCases.LoginPageTest.wrongEmail(LoginPageTest.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongEmail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:42Z" name="getResult" finished-at="2022-01-17T12:10:42Z" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongEmail status=FAILURE method=LoginPageTest.wrongEmail()[pri:3, instance:UI.testCases.LoginPageTest@47d90b9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="wrongPassword()[pri:4, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:42Z" name="wrongPassword" description="Hatalı Şifre ile Giriş" finished-at="2022-01-17T12:10:51Z" duration-ms="8985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:51Z" name="getResult" finished-at="2022-01-17T12:10:51Z" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=wrongPassword status=SUCCESS method=LoginPageTest.wrongPassword()[pri:4, instance:UI.testCases.LoginPageTest@47d90b9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankEmail()[pri:5, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:10:51Z" name="blankEmail" description="Boş Email ile Giriş" finished-at="2022-01-17T12:11:03Z" duration-ms="12180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmail -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:11:03Z" name="getResult" finished-at="2022-01-17T12:11:04Z" duration-ms="1013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankEmail status=SUCCESS method=LoginPageTest.blankEmail()[pri:5, instance:UI.testCases.LoginPageTest@47d90b9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankPassword()[pri:6, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:11:04Z" name="blankPassword" description="Boş Password ile Giriş" finished-at="2022-01-17T12:11:13Z" duration-ms="8826" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:11:13Z" name="getResult" finished-at="2022-01-17T12:11:13Z" duration-ms="192" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankPassword status=SUCCESS method=LoginPageTest.blankPassword()[pri:6, instance:UI.testCases.LoginPageTest@47d90b9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="blankEmailandPassword()[pri:7, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:11:13Z" name="blankEmailandPassword" description="Boş Email ve Password ile Giriş" finished-at="2022-01-17T12:11:22Z" duration-ms="8511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankEmailandPassword -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:UI.testCases.LoginPageTest@47d90b9e]" started-at="2022-01-17T12:11:22Z" name="getResult" finished-at="2022-01-17T12:11:22Z" duration-ms="140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=blankEmailandPassword status=SUCCESS method=LoginPageTest.blankEmailandPassword()[pri:7, instance:UI.testCases.LoginPageTest@47d90b9e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+      </class> <!-- UI.testCases.LoginPageTest -->
+    </test> <!-- IE Test -->
+  </suite> <!-- Odev -->
+</testng-results>
